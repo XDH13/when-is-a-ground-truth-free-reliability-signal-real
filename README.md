@@ -17,7 +17,14 @@ artifacts, and the independent fresh-generation repetitions reported in Table 6.
 - `P0_REPEAT_RESULTS.md` — human-readable repeat summary.
 - `exp4_collect.py` and `p0_mcq_collect.py` — collection scripts used by the
   MATH and MMLU repeat drivers.
-- `REVIEW7_POSTREPEAT_RESULT.md` — independent post-repeat review record.
+- `MAIN_AUDIT_REPRO_ARTIFACTS.zip` — complete main-scale MATH Qwen logs
+  (3B/7B/14B/32B), ARC/MMLU stress-test logs, and every main-text analysis
+  script referenced by the manuscript.
+- `verify_release.py`, `REPRODUCE.md`, `requirements.txt`, and
+  `CLEAN_RECOMPUTE_RECORD.md` — an analysis-only clean-directory verification
+  command, its pinned dependency, and the successful verification record.
+- `REVIEW7_POSTREPEAT_RESULT.md` and `REVIEW9_REPRODUCIBILITY_RESULT.md` —
+  independent review records before and after the public reproducibility fix.
 
 ## Reproduction scope
 
@@ -35,10 +42,11 @@ preserve that limitation when reusing these results.
 ## Integrity hashes (SHA-256)
 
 ```
-0dd524d0f3d6f16ee0005ce790f4dadb0fc16f699752ad9bf1ef7e30941969e8  ARIS_REV8.pdf
+7ddb13dc220e264c6684129d16e7f212ad87a975798eb98d34f5b017a436ff49  ARIS_REV8.pdf
 4ab9a40d02cd4e9b6274e53f3bd09ab53b9dd14f840fa916b4c61b92eae02332  P0_FINAL_ARTIFACTS.zip
-92c04abc553cbbf8f4cb492433ffbfc417ccbe503f559586ad10ef1ee859094c  P0_REPEAT_FINAL_ARTIFACTS.zip
-f8b49ad4a4f6ec52d36b6dd8ce065029d4287817512b957e6f4a501fd53952f1  Paper_Overleaf_REV8_FINAL.zip
+739f7d72532d70cecad4aa13acf6b2aeeb26545e892e5b30beff947cb5db406c  P0_REPEAT_FINAL_ARTIFACTS.zip
+a102fc10bd8d5e4398c983cfdadb21680c31c6cb5af9800b40c3a77c42797026  MAIN_AUDIT_REPRO_ARTIFACTS.zip
+5f6030a7a97e98d64c1716a6b44dc95513db7073bcbc0fe47185769af7aac49e  Paper_Overleaf_REV8_FINAL.zip
 ```
 
 The release contains model outputs and scripts, not model weights or benchmark
