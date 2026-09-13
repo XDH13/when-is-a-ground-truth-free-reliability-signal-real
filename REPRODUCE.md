@@ -13,6 +13,13 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
+Alternatively, create the equivalent Conda environment:
+
+```powershell
+conda env create -f environment.yml
+conda activate aris-rev8-repro
+```
+
 ## One-command clean-directory check
 
 From the directory containing this release, run:
@@ -38,3 +45,6 @@ The analysis-only check is intentionally distinct from fresh collection. The
 scripts and exact model identifiers for a new stochastic collection are in the
 repeat artifact; a new collection will not reproduce bit-for-bit traces because
 Ollama sampling was not seedable.
+
+For a fast integrity-only check that does not extract or execute analysis
+scripts, run `python verify_artifact_hashes.py`.

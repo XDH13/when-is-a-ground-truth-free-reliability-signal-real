@@ -1,6 +1,6 @@
 # Clean analysis-only recomputation record
 
-- UTC timestamp: `2026-09-13T07:34:46.829684+00:00`
+- UTC timestamp: `2026-09-13T09:38:44.807582+00:00`
 - Python: `3.11.4`
 - Mode: clean temporary directory; archived inputs only; no Ollama call.
 - Result: PASS.

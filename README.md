@@ -23,8 +23,9 @@ artifacts, and the independent fresh-generation repetitions reported in Table 6.
 - `verify_release.py`, `REPRODUCE.md`, `requirements.txt`, and
   `CLEAN_RECOMPUTE_RECORD.md` — an analysis-only clean-directory verification
   command, its pinned dependency, and the successful verification record.
-- `REVIEW7_POSTREPEAT_RESULT.md` and `REVIEW9_REPRODUCIBILITY_RESULT.md` —
-  independent review records before and after the public reproducibility fix.
+- `environment.yml` and `verify_artifact_hashes.py` — a second, Conda-friendly
+  environment specification and a no-execution integrity check for the public
+  artifact hashes.
 
 ## Reproduction scope
 
@@ -38,6 +39,11 @@ bit-for-bit regeneration guarantee.
 The paired item-bootstrap intervals compare two archived generation traces and
 do not estimate a population distribution over stochastic generations. Please
 preserve that limitation when reusing these results.
+
+The released analysis closure intentionally includes a small standalone
+`exp0_analyze.py` compatibility module: the published within-Level scripts use
+only its direction-agnostic Mann--Whitney AUC helper. The complete historical
+exploratory module is not required by the public verification command.
 
 ## Integrity hashes (SHA-256)
 

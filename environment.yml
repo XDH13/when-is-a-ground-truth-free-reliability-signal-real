@@ -1,0 +1,6 @@
+name: aris-rev8-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.4
+  - numpy=1.26.4
